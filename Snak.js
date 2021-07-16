@@ -27,7 +27,7 @@ function main(currentTime) {
     window.requestAnimationFrame(main);
     const delay = (currentTime - lastRenderTime) / 1000;
     if (delay < 1/speed) return;
-    
+
 
     lastRenderTime = currentTime;
     gameBoard.innerHTML = '';
@@ -35,9 +35,9 @@ function main(currentTime) {
     drawfood();
     drawSnake(gameBoard);
     delayFiller = 0;
-    c.fillStyle = 'black'; 
+    c.fillStyle = 'white'; 
     c.fillRect(0, 0, canvas.width, canvas.height);
-    c.fillStyle = 'red'; 
+    c.fillStyle = 'rgb(114, 96, 169)'; 
     c.fillText('SnakeVAnsh', canvas.width/8, 150, 400);
     c.fillText('Score : ' + score, canvas.width/8, 220, 400);
     c.fillText('W for Up', canvas.width/8, 400, 400);
